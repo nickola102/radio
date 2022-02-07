@@ -10,4 +10,17 @@ public class Radio {
         return currentStation;
     }
 
+    public void setCurrentStation(int newCurrentStation) {
+        if (newCurrentStation < 0)
+        {
+            return;
+        }
+        if (newCurrentStation > 9) {
+            return;
+        }
+        currentStation = newCurrentStation;
+
+    }
+
 }
+
